@@ -31,15 +31,15 @@ XButton2::
             
             ; Klik Kiri
             MouseClick "Left"
-            Sleep 30
+            Sleep 20
             
             ; Tekan 3 dengan SendEvent
             SendEvent "{3}"
-            Sleep 30
+            Sleep 10
             
             ; Tekan 1
             SendEvent "{1}"
-            Sleep 800  ; Delay 1 detik sebelum mengulang loop
+            Sleep 900  ; Delay sebelum mengulang loop
         }
         MacroRunning := false
     }
@@ -76,19 +76,3 @@ F7::
     TrayTip "Macro RESTARTED", "Point Blank Macro"
     SoundBeep 750, 150
 }
-
-; Jika ingin menggunakan XButton1 (tombol Forward) sebagai gantinya, uncomment baris di bawah:
-; XButton1::
-; {
-;     global MacroEnabled
-;     if (MacroEnabled) {
-;         Click "Right"
-;         Sleep 50
-;         Click "Left"
-;         Sleep 50
-;         Send "3"
-;         Sleep 50
-;         Send "1"
-;         Sleep 50
-;     }
-; }

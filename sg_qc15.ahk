@@ -36,7 +36,7 @@ XButton2::
             
             ; Tekan 1
             SendEvent "{1}"
-            Sleep 500  ; Delay 1 detik sebelum mengulang loop
+            Sleep 600  ; Delay 1 detik sebelum mengulang loop
         }
         MacroRunning := false
     }
